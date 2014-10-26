@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{151B45D7-67E9-4A53-8DE5-2B1B0D3A6B70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\JZ_CHIA\Desktop\oracle_dll\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TreeComboBox">
+      <HintPath>C:\Users\Test\Desktop\DBMS_Demo\Demo\bin\Debug\TreeComboBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class.cs" />
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="DBCon.cs" />
+    <Compile Include="DownLoadTarget.cs" />
+    <Compile Include="Entities\BaseLayer.cs" />
+    <Compile Include="Entities\FileLayer.cs" />
+    <Compile Include="Entities\HandleLog.cs" />
+    <Compile Include="Entities\RasterLayer.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Search.cs" />
+    <Compile Include="Entities\UserInfo.cs" />
+    <Compile Include="Entities\VectorLayer.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="ExportFromGDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportFromGDB.Designer.cs">
+      <DependentUpon>ExportFromGDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMetaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMetaData.Designer.cs">
+      <DependentUpon>FormMetaData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Clip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Clip.designer.cs">
+      <DependentUpon>Form_Clip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ImageEnhanceStretch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ImageEnhanceStretch.designer.cs">
+      <DependentUpon>Form_ImageEnhanceStretch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Moasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Moasic.designer.cs">
+      <DependentUpon>Form_Moasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Resample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Resample.designer.cs">
+      <DependentUpon>Form_Resample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Search.Designer.cs">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Setting.Designer.cs">
+      <DependentUpon>Form_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImageEnhanceBright.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImageEnhanceBright.designer.cs">
+      <DependentUpon>frmImageEnhanceBright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImageEnhanceContrast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImageEnhanceContrast.designer.cs">
+      <DependentUpon>frmImageEnhanceContrast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImageEnhanceTransparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImageEnhanceTransparency.designer.cs">
+      <DependentUpon>frmImageEnhanceTransparency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportToGDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportToGDB.Designer.cs">
+      <DependentUpon>ImportToGDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetaDataQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetaDataQuery.Designer.cs">
+      <DependentUpon>MetaDataQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCopyFeatures.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Target_NewFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Target_NewFeatures.designer.cs">
+      <DependentUpon>Target_NewFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Target_NewRaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Target_NewRaster.designer.cs">
+      <DependentUpon>Target_NewRaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOCTools\RemoveLayer.cs" />
+    <Compile Include="TOCTools\TOCLayersVisibility.cs" />
+    <Compile Include="TOCTools\ZoomToLayerCommand.cs" />
+    <Compile Include="TOCTools\LayerPropertiesCommand.cs" />
+    <Compile Include="Utility\OraBlob.cs" />
+    <Compile Include="Utility\TreeNodeOracs.cs" />
+    <Compile Include="Utility\URI.cs" />
+    <Compile Include="Utility\util.cs" />
+    <Compile Include="Utility\xmlSerialize.cs" />
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMetaData.resx">
+      <DependentUpon>FormMetaData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Clip.resx">
+      <DependentUpon>Form_Clip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ImageEnhanceStretch.resx">
+      <DependentUpon>Form_ImageEnhanceStretch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Moasic.resx">
+      <DependentUpon>Form_Moasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Resample.resx">
+      <DependentUpon>Form_Resample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Search.resx">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Setting.resx">
+      <DependentUpon>Form_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImageEnhanceBright.resx">
+      <DependentUpon>frmImageEnhanceBright.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImageEnhanceContrast.resx">
+      <DependentUpon>frmImageEnhanceContrast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImageEnhanceTransparency.resx">
+      <DependentUpon>frmImageEnhanceTransparency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportToGDB.resx">
+      <DependentUpon>ImportToGDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetaDataQuery.resx">
+      <DependentUpon>MetaDataQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Target_NewFeatures.resx">
+      <DependentUpon>Target_NewFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Target_NewRaster.resx">
+      <DependentUpon>Target_NewRaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomInTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOutTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomFixedZoomIn16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomFixedZoomOut16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomFullExtent16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagesetup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditUndo_B_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditRedo_B_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetaData_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902073631785_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902074038936_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902074133860_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902074241828_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902074349852_easyicon_net_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902074349852_easyicon_net_3212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902080011708_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902081258131_easyicon_net_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082039990_easyicon_net_31.4032634033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902081751103_easyicon_net_23.5524475524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902081608744_easyicon_net_31.6097560976.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082344816_easyicon_net_36.5517241379.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082453888_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082441370_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082707271_easyicon_net_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082852709_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2014090208362136_easyicon_net_29.0909090909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902082453888_easyicon_net_321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902084041315_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902084227279_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902071001660_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902090124251_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2014090209015449_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902090316490_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902090410761_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20140902090554250_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerPolygon32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerRaster32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerTerrain32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerGeneric32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerGeneric321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayerGeneric3212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModelBuilderRunModel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericPauseBlue32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericAddGreen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericDeleteRed32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericBlueAdd_C_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericBlueAdd32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vadfae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RasterImageAnalysisClip32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditCut32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataAdd_B_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RasterImageAnalysisPanSharpen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RasterImageAnalysisOrthoRectify32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoordinateSystem32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARConfig48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectionSelectLassoTool32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableRecordsZoomTo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RasterImageAnalysisMergeAdjacent32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RasterImageAnalysisDifference32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcGISConnectionTest32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EffectsSwipe32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcGISExplorer48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableExport32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcGISFileHandler48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoverageRelationship32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapOpen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericAddGreen16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericPencil16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericDeleteRedSmall16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User32_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User32_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User32_Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataImport32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataExport32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataEdit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataCreateUpdate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataValidate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataDocument32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomGeneric_B_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MetadataDocument321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LayoutChange32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1232434.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignIn321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group_B_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extension32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpSystemBlue48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrightNormal32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContMinus50_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContPlus75_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotatingGlobe32-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3DAnalystInterpolateProfileGraphCreate32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenericWaitTimer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectionSelectTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectionSelectPolygonTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectionSelectLassoTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectionSelectCircleTool16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbstractsDark01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellows.JPG" />
+    <None Include="Resources\Yellow-Green Light to Dark.JPG" />
+    <None Include="Resources\Yellow-Green Bright.JPG" />
+    <None Include="Resources\Yellow to Red.JPG" />
+    <None Include="Resources\Yellow to Green to Dark Blue.JPG" />
+    <None Include="Resources\Yellow to Dark Red.JPG" />
+    <None Include="Resources\Yellow Greens.JPG" />
+    <None Include="Resources\White to Black.JPG" />
+    <None Include="Resources\Warm Tones.JPG" />
+    <None Include="Resources\Warm Grey.JPG" />
+    <None Include="Resources\Verdant Tones.JPG" />
+    <None Include="Resources\Terra Tones.JPG" />
+    <None Include="Resources\Temperature.JPG" />
+    <None Include="Resources\Surface.JPG" />
+    <None Include="Resources\Spectrum-Full Light.JPG" />
+    <None Include="Resources\Spectrum-Full Dark.JPG" />
+    <None Include="Resources\Spectrum-Full Bright.JPG" />
+    <None Include="Resources\Slope.JPG" />
+    <None Include="Resources\SELECT PROCESSING PARAMETERS.png" />
+    <None Include="Resources\SELECT AN INPUT FILE.png" />
+    <None Include="Resources\rs000.png" />
+    <None Include="Resources\Reds.JPG" />
+    <None Include="Resources\Red to Green.JPG" />
+    <None Include="Resources\Red to Green Diverging, Dark.JPG" />
+    <None Include="Resources\Red to Green Diverging, Bright.JPG" />
+    <None Include="Resources\Red to Blue Diverging, Dark.JPG" />
+    <None Include="Resources\Red to Blue Diverging, Bright.JPG" />
+    <None Include="Resources\Red Light to Dark.JPG" />
+    <None Include="Resources\Red Bright.JPG" />
+    <None Include="Resources\QQ截图20130309124218.png" />
+    <None Include="Resources\Purples.JPG" />
+    <None Include="Resources\Purple-Red Light to Dark.JPG" />
+    <None Include="Resources\Purple-Red Bright.JPG" />
+    <None Include="Resources\Purple-Blue Light to Dark.JPG" />
+    <None Include="Resources\Purple-Blue Bright.JPG" />
+    <None Include="Resources\Purple to Green Diverging, Dark.JPG" />
+    <None Include="Resources\Purple to Green Diverging, Bright.JPG" />
+    <None Include="Resources\Purple Reds.JPG" />
+    <None Include="Resources\Purple Bright.JPG" />
+    <None Include="Resources\Purple Blues.JPG" />
+    <None Include="Resources\Precipitation.JPG" />
+    <None Include="Resources\Pink to YellowGreen Diverging, Dark.JPG" />
+    <None Include="Resources\Pink to YellowGreen Diverging, Bright.JPG" />
+    <None Include="Resources\Pastels.JPG" />
+    <None Include="Resources\Pastels Blue to Red.JPG" />
+    <None Include="Resources\Pastel Terra Tones.JPG" />
+    <None Include="Resources\Partial Spectrum.JPG" />
+    <None Include="Resources\Partial Spectrum 2 Diverging.JPG" />
+    <None Include="Resources\Partial Spectrum 1 Diverging.JPG" />
+    <None Include="Resources\Oranges.JPG" />
+    <None Include="Resources\Orange Light to Dark.JPG" />
+    <None Include="Resources\Orange Bright.JPG" />
+    <None Include="Resources\Muted Pastels.JPG" />
+    <None Include="Resources\Magentas.JPG" />
+    <None Include="Resources\Greens.JPG" />
+    <None Include="Resources\Green to Blue.JPG" />
+    <None Include="Resources\Green Light to Dark.JPG" />
+    <None Include="Resources\Green Bright.JPG" />
+    <None Include="Resources\Green Blues.JPG" />
+    <None Include="Resources\Gray Light to Dark.JPG" />
+    <None Include="Resources\Enamel.JPG" />
+    <None Include="Resources\Elevation #2.JPG" />
+    <None Include="Resources\Elevation #1.JPG" />
+    <None Include="Resources\Distance.JPG" />
+    <None Include="Resources\Dark Glazes.JPG" />
+    <None Include="Resources\Cyans.JPG" />
+    <None Include="Resources\Cyan-Light to Blue-Dark.JPG" />
+    <None Include="Resources\Cyan to Purple.JPG" />
+    <None Include="Resources\Cool Tones.JPG" />
+    <None Include="Resources\Cool Grey.JPG" />
+    <None Include="Resources\Cold to Hot Diverging.JPG" />
+    <None Include="Resources\Brown to Blue Green Diverging, Dark.JPG" />
+    <None Include="Resources\Brown to Blue Green Diverging, Bright.JPG" />
+    <None Include="Resources\Brown Light to Dark.JPG" />
+    <None Include="Resources\Blues.JPG" />
+    <None Include="Resources\Blue-Green Light to Dark.JPG" />
+    <None Include="Resources\Blue-Green Bright.JPG" />
+    <None Include="Resources\Blue Light to Dark.JPG" />
+    <None Include="Resources\Blue Bright.JPG" />
+    <None Include="Resources\Black to White.JPG" />
+    <None Include="Resources\Black and White.JPG" />
+    <None Include="Resources\Basic Random.JPG" />
+    <None Include="Resources\Aspect.JPG" />
+    <None Include="Resources\SpatialAnalystContourTool32.png" />
+    <None Include="Resources\LayerElevation32.png" />
+    <Content Include="TOCTools\RemoveLayer.bmp" />
+    <Content Include="TOCTools\TOCLayersVisibility.bmp" />
+    <Content Include="TOCTools\ZoomToLayerCommand.bmp" />
+    <Content Include="TOCTools\LayerPropertiesCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataManager\DataManager.csproj">
+      <Project>{485CD1EC-1CCF-43AE-8699-F31F820CECB3}</Project>
+      <Name>DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferManager\TransferManager.csproj">
+      <Project>{219E80C0-05AF-4477-9BA2-B4367194CEC7}</Project>
+      <Name>TransferManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transfer\Transfer.csproj">
+      <Project>{24F86316-3D66-4CB2-AF3D-81B7A56C949E}</Project>
+      <Name>Transfer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

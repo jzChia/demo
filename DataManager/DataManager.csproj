@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{485CD1EC-1CCF-43AE-8699-F31F820CECB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resee.DataManager</RootNamespace>
+    <AssemblyName>DataManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=11.9.0.0, Culture=neutral, PublicKeyToken=5792fed8a2c090cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Printing.v11.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="FormLayerProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLayerProperty.designer.cs">
+      <DependentUpon>FormLayerProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSymbolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSymbolSelector.designer.cs">
+      <DependentUpon>FormSymbolSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enumeration.cs" />
+    <Compile Include="FormTextElementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTextElementEdit.designer.cs">
+      <DependentUpon>FormTextElementEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GDBHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Structure.cs" />
+    <Compile Include="UniqueValueAddValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniqueValueAddValueForm.designer.cs">
+      <DependentUpon>UniqueValueAddValueForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormLayerProperty.resx">
+      <DependentUpon>FormLayerProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSymbolSelector.resx">
+      <DependentUpon>FormSymbolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTextElementEdit.resx">
+      <DependentUpon>FormTextElementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniqueValueAddValueForm.resx">
+      <DependentUpon>UniqueValueAddValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{7B4F20B8-E1DB-4F86-9FD2-19340D561F36}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfWizard\WpfWizard.csproj">
+      <Project>{16ED257D-130C-4C0E-B8E8-DFEDD0CD41E7}</Project>
+      <Name>WpfWizard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aspect.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basic Random.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black and White.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black to White.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Green Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Green Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blues.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown to Blue Green Diverging, Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown to Blue Green Diverging, Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cold to Hot Diverging.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Grey.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Tones.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyan-Light to Blue-Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyan to Purple.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyans.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Glazes.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Distance.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elevation #1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elevation #2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enamel.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gray Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Blues.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green to Blue.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Greens.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magentas.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Muted Pastels.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oranges.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partial Spectrum.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partial Spectrum 1 Diverging.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partial Spectrum 2 Diverging.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastel Terra Tones.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastels.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pastels Blue to Red.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink to YellowGreen Diverging, Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink to YellowGreen Diverging, Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Precipitation.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple-Blue Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple-Blue Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Blues.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple-Red Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple-Red Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Reds.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple to Green Diverging, Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple to Green Diverging, Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purples.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red to Blue Diverging, Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red to Blue Diverging, Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red to Green.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red to Green Diverging, Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red to Green Diverging, Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reds.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slope.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spectrum-Full Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spectrum-Full Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spectrum-Full Light.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Surface.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temperature.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terra Tones.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verdant Tones.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warm Grey.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warm Tones.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White to Black.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow-Green Bright.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow-Green Light to Dark.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow Greens.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow to Dark Red.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow to Green to Dark Blue.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow to Red.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellows.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="esriArcMapUI">
+      <Guid>{40499F24-596F-45D2-ACE1-A251E2990017}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

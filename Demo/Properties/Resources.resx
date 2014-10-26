@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MetadataEdit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataEdit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataAdd_B_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DataAdd_B_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignIn32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignIn32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2014090209015449_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2014090209015449_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionSelectTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectionSelectTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpSystemBlue48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpSystemBlue48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableRecordsZoomTo32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableRecordsZoomTo32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PanTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PanTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerGeneric32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerGeneric32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2014090208362136_easyicon_net_29.0909090909" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2014090208362136_easyicon_net_29.0909090909.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082707271_easyicon_net_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082707271_easyicon_net_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelBuilderRunModel32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModelBuilderRunModel32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericBlueAdd32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericBlueAdd32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomFixedZoomOut16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomFixedZoomOut16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902074349852_easyicon_net_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902074349852_easyicon_net_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotatingGlobe32-18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RotatingGlobe32-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082344816_easyicon_net_36.5517241379" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082344816_easyicon_net_36.5517241379.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContMinus50_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContMinus50_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forward_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayoutChange32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayoutChange32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerGeneric321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerGeneric321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataValidate32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataValidate32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RasterImageAnalysisPanSharpen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RasterImageAnalysisPanSharpen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcGISConnectionTest32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcGISConnectionTest32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902074133860_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902074133860_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagesetup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pagesetup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpatialAnalystContourTool32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpatialAnalystContourTool32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ARConfig48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARConfig48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902074349852_easyicon_net_3212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902074349852_easyicon_net_3212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Layout32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Layout32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericPauseBlue32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericPauseBlue32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrightNormal32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrightNormal32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditRedo_B_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditRedo_B_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RasterImageAnalysisClip32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RasterImageAnalysisClip32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902090410761_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902090410761_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User32_Del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User32_Del.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902074038936_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902074038936_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AbstractsDark01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AbstractsDark01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RasterImageAnalysisDifference32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RasterImageAnalysisDifference32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EffectsSwipe32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EffectsSwipe32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vadfae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vadfae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditCut32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditCut32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082441370_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082441370_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1232434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1232434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataExport32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataExport32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082453888_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082453888_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericDeleteRed32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericDeleteRed32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataDocument32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataDocument32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapOpen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MapOpen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomOutTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomOutTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericAddGreen16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericAddGreen16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditUndo_B_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditUndo_B_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcGISExplorer48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcGISExplorer48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CoordinateSystem32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CoordinateSystem32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082852709_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082852709_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User32_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User32_Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericDeleteRedSmall16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericDeleteRedSmall16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerPolygon32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerPolygon32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionSelectPolygonTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectionSelectPolygonTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082453888_easyicon_net_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082453888_easyicon_net_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomFixedZoomIn16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomFixedZoomIn16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionSelectCircleTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectionSelectCircleTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902071001660_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902071001660_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RasterImageAnalysisMergeAdjacent32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RasterImageAnalysisMergeAdjacent32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataCreateUpdate32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataCreateUpdate32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addfile_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addfile_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerGeneric3212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerGeneric3212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericAddGreen32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericAddGreen32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomInTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomInTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomFullExtent16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomFullExtent16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerRaster32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerRaster32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerTerrain32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerTerrain32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902090554250_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902090554250_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveas_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveas_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_B_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group_B_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RasterImageAnalysisOrthoRectify32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RasterImageAnalysisOrthoRectify32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataImport32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataImport32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902073631785_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902073631785_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericBlueAdd_C_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericBlueAdd_C_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionSelectLassoTool16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectionSelectLassoTool16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableExport32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableExport32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZoomGeneric_B_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZoomGeneric_B_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902084041315_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902084041315_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902090316490_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902090316490_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericWaitTimer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericWaitTimer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User32_Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User32_Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902081258131_easyicon_net_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902081258131_easyicon_net_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902082039990_easyicon_net_31.4032634033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902082039990_easyicon_net_31.4032634033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContPlus75_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContPlus75_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CoverageRelationship32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CoverageRelationship32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Extension32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extension32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902084227279_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902084227279_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backward_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backward_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionSelectLassoTool32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectionSelectLassoTool32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3DAnalystInterpolateProfileGraphCreate32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3DAnalystInterpolateProfileGraphCreate32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902080011708_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902080011708_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetadataDocument321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetadataDocument321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignIn321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignIn321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericPencil16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericPencil16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902090124251_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902090124251_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcGISFileHandler48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcGISFileHandler48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902081608744_easyicon_net_31.6097560976" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902081608744_easyicon_net_31.6097560976.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902074241828_easyicon_net_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902074241828_easyicon_net_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MetaData_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MetaData_New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20140902081751103_easyicon_net_23.5524475524" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20140902081751103_easyicon_net_23.5524475524.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerElevation32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerElevation32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
